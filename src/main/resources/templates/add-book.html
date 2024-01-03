@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New book?</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header class="header">
+    <h1 class="logo">Library book</h1>
+    <p class="account-text">My Account</p>
+</header>
+<div class="main">
+    <h2 align="center">Please, enter data</h2>
+    <div class="add-container">
+        <form action="/add" method="POST">
+            <input type="text" name="title" placeholder="Book title" class="title-input">
+            <input type="text" name="author" placeholder="Author of the book" class="author-input">
+            <input type="text" name="genre" placeholder="Book genre" class="genre-input">
+            <input type="number" name="pages" placeholder="How many pages has a book?" class="page-input">
+            <button type="submit" class="btn-save">Save</button>
+        </form>
+    </div>
+</div>
+<a href="/" align="center">Want to go back?</a>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update book</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header class="header">
+    <h1 class="logo">Library book</h1>
+    <p class="account-text">My Account</p>
+</header>
+<div class="main">
+    <h2 align="center">Update book</h2>
+    <div class="add-container">
+        <form method="POST" th:object="${book}" class="add-container">
+            <input type="hidden" th:field="*{id}" /> <!-- Поле id повинно бути прихованим -->
+            <input type="text" name="title" th:field="*{title}" class="title-input">
+            <input type="text" name="author" th:field="*{author}" class="author-input">
+            <input type="text" name="genre" th:field="*{genre}" class="genre-input">
+            <input type="number" name="pages" th:field="*{pages}" class="page-input">
+            <button type="submit" class="btn-save">Save</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>

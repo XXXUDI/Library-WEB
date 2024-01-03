@@ -1,0 +1,142 @@
+body {
+    font-family: 'poppis', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #282c35; /* Тёмный фон */
+    color: #fff; /* Цвет текста */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #1e2329; /* Тёмный цвет для заголовка */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Тень для выделения заголовка */
+}
+
+.logo {
+    margin: 0;
+    margin-left: 20px;
+    color: #fff; /* Цвет текста */
+}
+
+.account-text {
+    margin-right: 20px;
+    color: #ccc; /* Цвет текста */
+}
+
+main {
+    background-color: #282c35; /* Тёмный фон */
+    color: #fff; /* Цвет текста */
+    padding: 20px;
+}
+
+.add-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.add-button input {
+    background-color: transparent;
+    border: 3px solid #fff;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.add-button input:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.books {
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+    margin: 20px;
+    color: #fff; /* Цвет текста */
+}
+
+.book {
+    border: 2px solid #000000;
+    padding: 10px;
+    margin: 20px;
+    background-color: #1e2329; /* Тёмный цвет фона */
+}
+
+button {
+    text-decoration-color: #fff;
+    fill: #fff;
+    border-radius: 10px;
+    background-size: 20px;
+    border: 3px solid #fff;
+    margin-right: 10px;
+    background-color: transparent;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.add-container {
+    width: 300px;
+    margin: 20px auto;
+    background-color: #1e2329; /* Тёмный цвет фона */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #282c35; /* Тёмный фон формы */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.title-input,
+.author-input,
+.genre-input,
+.page-input {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+    background-color: #1e2329; /* Тёмный цвет фона */
+    color: #fff; /* Цвет текста */
+}
+
+.title-input:focus,
+.author-input:focus,
+.genre-input:focus,
+.page-input:focus {
+    border-color: #66afe9;
+}
+
+.btn-save {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #428bca;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-save:hover {
+    background-color: #3071a9;
+}
