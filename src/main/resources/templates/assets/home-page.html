@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Library Web | Overview</title>
+    <link rel="icon" href="/images/books-svgrepo-com.svg">
+    <link rel="stylesheet" href="/css/header-styles.css">
+<!--    /src/main/resources/static-->
+    <link rel="stylesheet" href="/css/sidebar-styles.css">
+    <link rel="stylesheet" href="/css/home-styles.css">
+</head>
+<body>
+<div th:insert="fragments/fragment::header"></div>
+<div th:insert="fragments/fragment::overview-sidebar"></div>
+<div class="main">
+    <div class="user-container">
+        <div class="user-card">
+            <div class="user-profile">
+                <div class="user-profile-image">
+                     <div th:if="${User.image()}">
+                         <img th:src="@{}"/>
+                     </div>
+                    <div th:else>
+                        <img src="/images/test-image.jpg">
+                    </div>
+                </div>
+                <div class="user-details">
+                    <h2 th:text="${User.username()}">Sleepy Miracle</h2>
+                    <p>User status</p>
+                </div>
+            </div>
+            <hr>
+            <div class="user-account-info">
+                <div class="user-email">
+                    <h3>Email: </h3>
+                    <p>ex***le@gmail.com</p>
+                </div>
+                <div class="user-password">
+                    <h3>Password:</h3>
+                    <p>*****************</p>
+                </div>
+                <div class="user-sms-auth">
+                    <h3>SMS Authentication</h3>
+                    <p>+380 93 *** **89</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="books-container">
+        <div class="books-card">
+            <h3>Title</h3>
+            <h3>Genre</h3>
+            <h3>Rate</h3>
+            <h3>Comments</h3>
+            <h3>Rank</h3>
+            <div class="user-books">
+                <ul>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

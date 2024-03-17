@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Post & Read your thought | Library Web</title>
+    <link rel="stylesheet" href="/css/header-styles.css">
+<!--    /src/main/resources/static-->
+    <link rel="stylesheet" href="/css/main-page-styles.css">
+</head>
+<body>
+<div th:insert="fragments/fragment::header"></div>
+<div class="main-layout-content">
+    <div class="main-banner-container">
+        <section class="banner">
+            <h3>Welcome to Library Web!</h3>
+            <div class="banner-start">
+                <form action="/assets/user/overview" method="get">
+                    <button class="button-85" type="submit">Overview</button>
+                </form>
+            </div>
+<!--            <div class="banner-image">-->
+<!--                <img src="/src/main/resources/static/images/test-image.jpg">-->
+<!--            </div>-->
+        </section>
+        <section class="main-wrapper">
+            <form action="#">
+                <p>Take a tour about our services</p>
+            </form>
+        </section>
+    </div>
+</div>
+</body>
+</html>

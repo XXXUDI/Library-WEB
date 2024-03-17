@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+.user-account-info h3 {
+    font-size: 20px;
+}
+.user-account-info p {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    background: rgb(174, 46, 233);
+    background: linear-gradient(90deg, rgba(174, 46, 233, 1) 0%, rgba(62, 57, 255, 1) 100%);
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.user-container {
+    margin-top: 30px;
+    flex: 0 0 30%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.books-container {
+    margin-top: 56vh;
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 40%;
+}
+
+.books-card {
+    justify-content: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.books-card h3 {
+    flex: 1;
+    text-align: left;
+}
+
+.user-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column; /* Расположение элементов в столбик */
+    overflow: hidden; /* Обрезать содержимое, выходящее за пределы */
+}
+
+.user-profile {
+    display: flex;
+    align-items: center; /* Центрирование по горизонтали */
+    margin-right: 20px; /* Отступ справа */
+}
+
+.user-profile-image img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.user-details {
+    display: flex;
+    flex-direction: column; /* Расположение элементов в столбик */
+}
+
+.user-details h2 {
+    margin-bottom: 10px;
+    white-space: nowrap; /* Запрет переноса слов */
+    overflow: hidden; /* Обрезать содержимое, выходящее за пределы */
+    text-overflow: ellipsis; /* Добавить многоточие в конце текста, если он не помещается */
+    font-size: 26px;
+}
+
+.user-details p {
+    margin-bottom: 50px;
+    white-space: nowrap; /* Запрет переноса слов */
+    overflow: hidden; /* Обрезать содержимое, выходящее за пределы */
+    text-overflow: ellipsis; /* Добавить многоточие в конце текста, если он не помещается */
+    font-size: 20px;
+
+}
+
+.user-card hr{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    clear: both; /* После hr элементы должны начинаться с новой строки */
+}
+
+.user-account-info {
+    clear: both; /* Элементы после hr должны начинаться с новой строки */
+}
+
+.user-password {
+    margin-top: 20px;
+}
+
+.user-sms-auth {
+    margin-top: 20px;
+}
+
